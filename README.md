@@ -6,9 +6,9 @@ Creating the plantsdb database locally
 
 ```shell
 # Connect to the PostgreSQL
-psql <database>
+psql
 # Create the database,  *plantsdb*, and create a user `student`. Grant all privileges to the student
-\i plantsdb_setup.sql
+\i <db_folder>/plantsdb_setup.sql
 # Exit the PostgreSQL prompt
 \q
 ```
