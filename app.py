@@ -42,6 +42,14 @@ def create_app():
                 'plant': plant.format()
             })
 
+    @app.errorhandler(404)
+    def not_found(error):
+        return jsonify({
+            "success": False,
+            "error": 404,
+            "message": "Resource not found"
+        }), 404
+
     return app
 
 
